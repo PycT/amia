@@ -40,3 +40,15 @@ Welcome to your personal private planning, management, and strategic thinking wo
 - `[x]` **Completed**: Done.
 - `[>]` **In Progress / Deferred**: Rolled over or active.
 - `[Z]` **Cancelled / Paused**: On hold or removed.
+
+### Timestamp Audit Trail
+
+Every writing operation on tasks and events records a timestamp (`YYYY-MM-DD HH:mm`) inline:
+
+| Operation | Example |
+| :--- | :--- |
+| **Creation** | `- [ ] Draft proposal *(created: 2026-07-24 18:40)*` |
+| **Status Change (Append)** | `- [x] Draft proposal *(created: 2026-07-24 18:40 · deferred: 2026-07-24 20:00 · completed: 2026-07-25 09:15)*` |
+| **Cancellation** | `- [Z] Draft proposal *(created: 2026-07-24 18:40 · cancelled: 2026-07-26 11:00)*` |
+
+*Note: Always append new timestamps to maintain a full history. Never delete previous timestamps.*

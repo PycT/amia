@@ -54,6 +54,12 @@
   - `[x]` Completed
   - `[>]` In Progress / Deferred
   - `[Z]` Cancelled / Paused
+- **Timestamp Audit Trail (Mandatory)**: Every **writing operation** on tasks and events MUST record a timestamp in `YYYY-MM-DD HH:mm` format to maintain a full history from creation. Writing operations include:
+  - **Creation**: When a task or event is first written, append its creation timestamp — e.g. `- [ ] Draft proposal *(created: 2026-07-24 18:40)*`.
+  - **Status Change**: When a task's status checkbox changes, **append** the transition timestamp. Do NOT overwrite previous timestamps. — e.g. `- [x] Draft proposal *(created: 2026-07-24 18:40 · deferred: 2026-07-25 09:00 · completed: 2026-07-26 10:15)*`.
+  - **Cancellation / Removal**: Append the cancellation timestamp before deletion or within the cancelled entry — e.g. `- [Z] Draft proposal *(created: 2026-07-24 18:40 · cancelled: 2026-07-26 11:00)*`.
+  - **Format**: Timestamps are appended inline in italicized parentheses using `·` (middle dot) as the separator between lifecycle entries. Never delete a previous timestamp.
+  - **Scope**: This rule applies to ALL task lines (`- [ ]`, `- [x]`, `- [>]`, `- [Z]`) and calendar/event entries across every file in the workspace (project backlogs, sprint plans, meeting action items, README task lists, etc.).
 - **File Links**: Always link referenced files using markdown links (`[filename](path/to/file)`).
 
 ---
