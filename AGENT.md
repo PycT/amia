@@ -33,6 +33,7 @@
 - **Free-Style Reference Materials Folder**: Every project must have a dedicated folder (e.g., `references/`) for free-style reference materials, unstructured notes, research documents, and background assets.
 - **Project Scope & Requirements Specification**: Projects may optionally track a formal scope definition and requirements specification as needed per project.
 - **Project Terms & Definitions Standard**: Track key terms, acronyms, domain jargon, and definitions for projects using a markdown table with columns `Term / Acronym`, `Definition`, and `Context / Notes`. Additional unstructured notes for any term may be appended beyond the table in the same file(s).
+- **Open Questions Tracking (Mandatory)**: Every project MUST maintain an **Open Questions** list. Track them in a dedicated section of the project's `README.md` or in a separate `open-questions.md` file if the volume warrants it. Each open question entry MUST include: the question itself, who raised it (if known), the date raised, and current status (`open`, `resolved`, `deferred`). Resolved questions MUST be kept (not deleted) with their resolution noted inline. Open Questions MUST be included in every response that covers state of affairs, nearest tasks, plans, priorities, or any similar summary — scoped to the relevant project(s) or globally if the query spans all projects.
 
 ---
 
@@ -49,6 +50,8 @@
 
 ## 4. Communication & Formatting
 - **Concise & Actionable**: Provide clear summaries, bulleted action items, and structured tables.
+- **Open Questions in Summaries**: Any response that covers state of affairs, nearest tasks, plans, priorities, or similar overviews MUST include an **Open Questions** section listing all unresolved questions for the relevant project(s). If no open questions exist, explicitly state "No open questions." to confirm awareness.
+- **Per-Project Grouping in Multi-Project Summaries**: When a summary response covers more than one active project, ALL content (status, nearest tasks, open questions, priorities, etc.) MUST be organized into clearly labeled per-project sections using a project-name heading (e.g., `## 🗂 Project: <name>`). Within each section, include only that project's relevant sub-items. A **Global / Cross-Project** section may appear at the top for items that span multiple projects. Project sections are ordered by priority (if defined) or by recency of last activity. Single-project responses are exempt from this grouping but remain subject to the Explicit Scope Declaration rule.
 - **Task Notation**: Enforce standard state tracking:
   - `[ ]` Open / Pending
   - `[x]` Completed
