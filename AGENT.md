@@ -64,6 +64,10 @@
   - **Format**: Timestamps are appended inline in italicized parentheses using `·` (middle dot) as the separator between lifecycle entries. Never delete a previous timestamp.
   - **Scope**: This rule applies to ALL task lines (`- [ ]`, `- [x]`, `- [>]`, `- [Z]`) and calendar/event entries across every file in the workspace (project backlogs, sprint plans, meeting action items, README task lists, etc.).
 - **File Links**: Always link referenced files using markdown links (`[filename](path/to/file)`).
+- **Open Questions Format Rule**: Every new or edited question in `open-questions.md` must include the metadata suffix in this exact pattern: `(raised: YYYY-MM-DD · status: open)`.
+- **Consistency Rule**: When adding a new item, match the formatting of existing items exactly, including checkbox marker, punctuation, and metadata placement.
+- **Pre-finish Validation Rule**: Before finalizing, run a quick check to confirm no question line is missing metadata. Validation target: all bullet items under Open Questions include both raised date and status.
+- **Failure Recovery Rule**: If one item is missing metadata, fix it immediately before responding, and briefly report the correction.
 
 ---
 
