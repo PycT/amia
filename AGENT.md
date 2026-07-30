@@ -73,6 +73,7 @@
 
 ## 5. Context & Memory Management
 - **Mandatory Memory Usage**: You MUST actively consult and update [.planning/MEMORY.md](.planning/MEMORY.md) in every relevant interaction to memorize user preferences, record long-term facts, track goals, and maintain continuity across sessions. Never rely on in-context memory alone for long-term facts.
+- **Memory Last Updated**: Whenever you update `.planning/MEMORY.md`, you MUST update the `Last Updated` timestamp at the beginning of the file in ISO8601 format (e.g., `YYYY-MM-DDTHH:mm:ss±hh:mm`).
 - **Mandatory Decision Logging**: You MUST actively log any significant strategic choices, technical decisions, roadmap shifts, or user directives in [.planning/DECISION_LOG.md](.planning/DECISION_LOG.md). Keep an ongoing append-only or carefully curated record of "why" decisions were made.
 - **Workspace Navigation**: Keep [README.md](README.md) updated when new tracking files, projects, or structural changes are made.
 - **Strategic Alignment**: When assisting with monthly or yearly planning, verify alignment with the relevant project's goals and milestones.
