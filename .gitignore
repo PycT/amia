@@ -1,0 +1,6 @@
+# Sensitive credentials & tokens
+.sensitive/
+.venv/
+*.json
+!package.json
+!tsconfig.json
